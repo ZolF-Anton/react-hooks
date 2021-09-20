@@ -38,14 +38,14 @@ export class Chapter2Class extends React.Component {
                         label='First Name'
                         //type='text'
                         value={this.state.firstName}
-                        onChange={(firstName) => this.setFirstName(firstName)}
+                        onChange={(firstName) => this.setState(firstName)}
                     />
                     <FormField
                         name='lastName'
                         label='Last Name'
                         //type='text'
                         value={this.state.lastName}
-                        onChange={(lastName) => this.setLastName(lastName)}
+                        onChange={(lastName) => this.setState(lastName)}
                     />
                     <FormField
                         name='age'
@@ -53,7 +53,7 @@ export class Chapter2Class extends React.Component {
                         type='number'
                         value={this.state.age}
                         onChange={(ageString) => {
-                            this.setAge(ageString ? parseInt(ageString) : '');
+                            this.setState(ageString ? parseInt(ageString) : '');
                         }}
                     />
                 </form>
