@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { Clicker } from './Chapters/Chapter-1';
 import { Form } from './Chapters/Chapter-2';
+import { Chapter011 } from './Chapters/011_Chapter';
 
 ReactDOM.render(
     <div className='Appz'>
@@ -13,7 +14,7 @@ ReactDOM.render(
             <Form />
         </div>
         <div className='Appz-inner'>
-            <App />
+            <Chapter011 />
             Second column
         </div>
     </div>,
